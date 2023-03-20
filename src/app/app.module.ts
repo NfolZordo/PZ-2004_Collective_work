@@ -22,6 +22,7 @@ import { StrichevskyiComponent } from './students/strichevskyi/strichevskyi.comp
 import { StroganovComponent } from './students/stroganov/stroganov.component';
 import { TsybenkoComponent } from './students/tsybenko/tsybenko.component';
 import { StudentComponent } from './component/student/student.component';
+import { ShramenkoComponent } from './students/shramenko/shramenko.component';
 
 const routes: Routes = [
   { path: 'babich', component: BabichComponent },
@@ -40,7 +41,8 @@ const routes: Routes = [
   { path: 'strichevskyi', component: StrichevskyiComponent },
   { path: 'stroganov', component: StroganovComponent },
   { path: 'tsybenko', component: TsybenkoComponent },
-  { path: 'student', component: StudentComponent },];
+  { path: 'student', component: StudentComponent },
+  { path: 'shramenko', component: ShramenkoComponent },];
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,7 +62,8 @@ const routes: Routes = [
     StrichevskyiComponent,
     StroganovComponent,
     TsybenkoComponent,
-    StudentComponent
+    StudentComponent,
+    ShramenkoComponent
   ],
   imports: [
     BrowserModule,
