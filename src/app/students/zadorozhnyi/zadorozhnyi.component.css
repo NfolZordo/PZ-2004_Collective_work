@@ -1,0 +1,304 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: rgb(0, 1, 83);
+    --main-text-color: #fff;
+    --segment-color: rgb(107, 9, 9);
+
+  }
+body {
+    position: relative; 
+    z-index: 0;
+    background: rgb(0, 1, 83);
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    min-width: 900px;
+    font-family: "Montserrat";
+}
+
+.html * {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: absolute;
+}
+
+.small {
+    width: 100%;
+    height: 0;
+}
+
+.navbar-elements {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav-item {
+    margin-right: 10%;
+    list-style-type: none;
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+.nav-link {
+    color: #fff;
+
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.page-header {
+    /* position: absolute; */
+    /* background: rgba(0, 87, 9, 0.801); */
+    height: 100%;
+    width: 100%;
+    color: #fff;
+
+}
+
+.bgr-img {
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#myVideo {
+
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.myVideo {
+    position: absolute;
+    inset: 0px;
+    overflow: hidden;
+    /* background-color: rgb(102, 160, 47); */
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+}
+
+.container {
+    height: 100vh;
+}
+
+.content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.profile-image {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    height: 180px;
+    width: 180px;
+}
+
+.segment {
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(107, 9, 9);
+    box-shadow: 0px 0px 10px 5px  rgb(107, 9, 9);
+}
+
+.about {
+    color: #fff;
+    display: flex;
+
+    box-shadow: 0px 0px 10px 5px  rgb(107, 9, 9);
+}
+
+.about-body {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 1.25rem;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.714em;
+    line-height: 1.45em;
+    text-align: center;
+}
+
+.rows {
+    padding-bottom: 15px;
+}
+
+.row {
+    display: flex;
+    margin-top: 15px;
+}
+
+.col-sm-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-sm-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.progress {
+    background: rgba(0, 0, 0, 0.4);
+    height: 5px;
+}
+
+.progress-bar {
+    background: #fff;
+    height: 5px;
+
+    z-index: 30;
+}
+
+.skills {
+    padding: 10px;
+}
+
+.skills-title {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.progress-container {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.portfolio {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    min-height: 100%;
+    position: relative;
+}
+
+.portfolio_img {
+    display: grid;
+    grid-template: auto auto / 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 10px;
+    height:auto; 
+
+}
+
+.p_img {
+    border-radius: 2%;
+    height:auto; 
+
+}
+
+.p_text {
+    height:auto; 
+    background-color: rgb(0, 1, 83);
+    font-weight: bold;
+    border-radius: 2%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    opacity: .7;
+    z-index: 1;
+}
+
+.p_text:hover {
+    z-index: -1;
+}
+
+.p_img:hover {
+    z-index: 3;
+}
+
+.portfolio_mobdev {
+    grid-area: 1 / 1;
+    width: 100%;
+
+}
+
+.portfolio_poker {
+    grid-area: 2 / 1;
+    width: 100%;
+}
+
+.portfolio_ticTacTong {
+    grid-area: 2 / 2;
+    width: 100%;
+
+}
+
+.portfolio_webdeev {
+    grid-area: 1 / 2;
+    width: 100%;
+}
+
+footer {
+    height: 200px;
+    background: rgb(31, 0, 0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+footer img{
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 10vw;
+}
+footer img:hover{
+    cursor: pointer;
+}

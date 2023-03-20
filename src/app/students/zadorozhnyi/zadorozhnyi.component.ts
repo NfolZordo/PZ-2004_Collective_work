@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ZadorozhnyiComponent {
 
+  playVideo() {
+    let video = document.getElementById('myVideo') as HTMLVideoElement;
+    video.play();
+  }
 }
