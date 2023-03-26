@@ -21,6 +21,7 @@ export class AppComponent {
     });
   }
   goToStudent(student: IStudent): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     this.router.navigate([student.url]);
 
   }

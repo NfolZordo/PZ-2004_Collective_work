@@ -23,6 +23,8 @@ import { StroganovComponent } from './students/stroganov/stroganov.component';
 import { TsybenkoComponent } from './students/tsybenko/tsybenko.component';
 import { StudentComponent } from './component/student/student.component';
 import { ShramenkoComponent } from './students/shramenko/shramenko.component';
+import { SlideshowComponent } from './component/slideshow/slideshow.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 const routes: Routes = [
   { path: 'babich', component: BabichComponent },
@@ -63,7 +65,9 @@ const routes: Routes = [
     StroganovComponent,
     TsybenkoComponent,
     StudentComponent,
-    ShramenkoComponent
+    ShramenkoComponent,
+    SlideshowComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
