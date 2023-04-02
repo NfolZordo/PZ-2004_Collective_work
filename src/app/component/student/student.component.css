@@ -1,0 +1,12 @@
+.html {
+    margin: 0;
+    padding: 0;
+}
+.body {
+    padding: 0;
+    margin: 0;
+}
+img {
+    border-radius: 50%;
+    height: 70%;
+}

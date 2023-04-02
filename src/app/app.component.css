@@ -1,0 +1,67 @@
+.html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+/* .students {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10%;
+}
+.student {
+    background-color: aquamarine;
+    margin: 15px;
+} */
+.students {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+    padding: 10%;
+}
+
+.student {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+.student:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    background-color: #f2f2f2;
+}
+
+.student img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.student h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+}
+.student:hover h5 {
+    color: #4285f4;
+}
+
+.students app-student:nth-last-child(1)  {
+    margin-left: 25%;
+    margin-right: 25%;
+    grid-column: 1 / 3
+}

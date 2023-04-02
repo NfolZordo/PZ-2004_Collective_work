@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <title>Visiting</title>
+</head>
+
+<body>
+    <header>
+        <div class="small">
+            <nav class="navbar-elements">
+                <ul class="navbar-nav" id="myDropdown">
+                    <li class="nav-item"><a class="nav-link" href="zadorozhnyi/#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="zadorozhnyi/#skill">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="zadorozhnyi/#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="zadorozhnyi/#footer">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="page-header" filter-color="green">
+            <div class="myVideo">
+                <video autoplay muted loop id="myVideo" (load)="playVideo()">
+                    <source src="assets/zador/images/vid.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="container">
+                <div class="content-center">
+                    <img class="profile-image" src="assets/zador/images/Thador.jpg" alt="Image" />
+                    <div class="title">Задорожний Олександр Васильович</div>
+                </div>
+            </div>
+        </div>
+        <div class="about segment">
+            <div class="about-body">
+                <div class="title"><a id="about">Про мене</a></div>
+                <p>Привіт, я Задорожний Олександр. Ласкаво прошу на моєму сайті-візитці</p>
+                <p>Зараз я навчаюсь на третьому курсі Черкаського Державного Університету, на факультеті інформаційних
+                    технологій і систем </p>
+            </div>
+            <div class="about-body">
+                <div class="title">Інформація</div>
+                <div class="row">
+                    <div class="col-sm-4"><strong class="text-uppercase">Вік:</strong></div>
+                    <div class="col-sm-8">27</div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
+                    <div class="col-sm-8">o.v.zadorozhnyi.fitis20<wbr>@chdtu.edu.ua</div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-4"><strong class="text-uppercase">Телефон:</strong></div>
+                    <div class="col-sm-8">+380968864483</div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-4"><strong class="text-uppercase">Мови:</strong></div>
+                    <div class="col-sm-8">Українська, російська, англійська</div>
+                </div>
+            </div>
+        </div>
+        <div class="skills segment">
+            <div class="title skills-title"><a id="skill">Професійні навички</a></div>
+            <div class="rows">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="progress-container"><span class="progress-badge">HTML</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                    data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span
+                                    class="progress-value">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="progress-container"><span class="progress-badge">CSS</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                    data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span
+                                    class="progress-value">75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="progress-container"><span class="progress-badge">JavaScript</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                    data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div><span
+                                    class="progress-value">60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="progress-container"><span class="progress-badge">TypeScript</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                    data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div><span
+                                    class="progress-value">60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="progress-container"><span class="progress-badge">C#</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                    data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div><span
+                                    class="progress-value">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="progress-container"><span class="progress-badge">Java</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                    data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span
+                                    class="progress-value">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="progress-container"><span class="progress-badge">Python</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                    data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div><span
+                                    class="progress-value">65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="progress-container"><span class="progress-badge">SQL</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                    data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60"
+                                    aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span
+                                    class="progress-value">75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio segment">
+            <div class="title skills-title"><a id="portfolio">Портфоліо</a></div>
+            <div class="portfolio_img">
+                <div class="portfolio_mobdev p_text">Мультиплатформенний мобільний додаток</div>
+                <img class="portfolio_mobdev p_img" src="assets/zador/images/mobDev.png" alt="Image" />
+                <div class="portfolio_poker p_text">Компютерна гра на С#</div>
+                <img class="portfolio_poker p_img" src="assets/zador/images/Poker.png" alt="Image" />
+                <div class="portfolio_webdeev p_text">Створення веб сайтів</div>
+                <img class="portfolio_webdeev p_img" src="assets/zador/images/webdev.png" alt="Image" />
+                <div class="portfolio_ticTacTong p_text">Браузерна гра на TypeScript</div>
+                <img class="portfolio_ticTacTong p_img" src="assets/zador/images/ticTacTong.png" alt="Image" />
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div>
+            <h2><a di="contact">© Задорожний Олександр</a></h2>
+        </div>
+        <div>
+            <a href="https://github.com/NfolZordo"><img src="assets/zador/images/icons/github.svg" alt=""></a>
+            <a href="#"><img src="assets/zador/images/icons/facebook.svg" alt=""></a>
+            <a href="#"><img src="assets/zador/images/icons/instagram.svg" alt=""></a>
+            <a href="#"><img src="assets/zador/images/icons/linkedin.svg" alt=""></a>
+            <a href="#"><img src="assets/zador/images/icons/gmail.png" alt=""></a>
+        </div>
+    </footer>
+    <script>
+
+        window.onclick = function (e) {
+            if (!e.target.matches('.nav-img')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
