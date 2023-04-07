@@ -1,1 +1,60 @@
-<p>sokolov works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./sokolov.component.css">
+</head>
+<body>
+<header class="header">
+    <div class="header__avatar">
+        <img class="header__avatar__img" src="assets/sokolov/images/avatar.jpg" alt="avatar">
+    </div>
+    <h2 class="header__name">Sokolov Maksym</h2>
+</header>
+<div class="resume">
+    <div class="resume__summary block">
+        <h2>About</h2>
+        <p class="resume__summary_text">
+            Front-end developer with 1 year experience. I have been interested in web development since my school age. I
+            like to travel and walk in the mountains, I have a second category in hiking and sports tourism. I like to
+            solve complex programming problems, I get great pleasure from solving them. With a focus on scalable and
+            well-documented code, I look forward to working together.
+        </p>
+    </div>
+    <div class="resume__certifications block">
+        <h2>Certifications</h2>
+        <div class="resume__certifications__certificate">
+            <h4 class="resume__certifications__certificate__name">ICAgile Certified Professional</h4>
+            <p class="resume__certifications__certificate__date">Issued Jul 2022 · No Expiration Date</p>
+        </div>
+        <div class="resume__certifications__certificate">
+            <h4 class="resume__certifications__certificate__name">SPD-University</h4>
+            <p class="resume__certifications__certificate__date">Issued Jan 2022 · No Expiration Date</p>
+        </div>
+    </div>
+    <div class="resume__study block">
+        <h2>Education</h2>
+        <div class="resume__study__item">
+            <h4 class="resume__study__item__name">ChSTU</h4>
+            <p class="resume__study__item__date">Sep 2020 - Present · 2 yr 8 mo</p>
+        </div>
+    </div>
+    <div class="resume__skills block">
+        <h2 class="resume__skills__title">Skills</h2>
+        <div *ngFor="let skill of SKILLS_LIST" class="skills">
+            <progress-bar [width]="500" [progress]="skill[1]" [title]="skill[0]"></progress-bar>
+        </div>
+    </div>
+    <h2 class="projects-title">Projects</h2>
+    <div class="projects">
+<!--        url="http://localhost:8080"-->
+        <tilt-card
+                [imgSrc]="'assets/sokolov/images/projects/firstProject.png'"
+                [index]="0">
+        </tilt-card>
+        <tilt-card [imgSrc]="'assets/sokolov/images/projects/secondProject.png'" [index]="1"></tilt-card>
+    </div>
+</div>
+</body>
+</html>

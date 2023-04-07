@@ -1,0 +1,58 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+}
+
+.card img {
+    height:100%;
+    width:100%;
+    display:block;
+    object-fit: contain;
+    object-position: center;
+    filter: brightness(60%)
+}
+
+.card {
+    height: 100px;
+    background: hsl(222, 45%, 7%);
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+
+    transform-style: preserve-3d;
+    transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
+    transition: all 0.1s linear;
+}
+
+.card > * {
+    text-shadow: 0 0 0.3em currentColor;
+}
+
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+}
+
+.card::before {
+    inset: 0.75rem;
+    border-radius: inherit;
+    background: black;
+    z-index: -1;
+    transform: translateZ(-50px);
+    filter: blur(15px);
+    opacity: 0.5;
+}
+
+.card::after {
+    z-index: -2;
+    inset: -1rem;
+    background: linear-gradient(-45deg, var(--sea), var(--red));
+    transform: translateZ(-50px);
+}
+
+div:not( :hover ) {
+    transition: all 1s;
+}
