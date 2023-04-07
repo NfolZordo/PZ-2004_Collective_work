@@ -1,0 +1,9 @@
+<div class="progress-bar">
+    <div class="progress-bar__title" [style]="{width: addPx(width)}">{{title}}</div>
+    <div class="progress-bar__progress" [style]="{width: addPx(width)}">
+        <div class="progress-bar__percents" [style]="{width: (progress * width) / 100 + 'px'}">
+            {{progress}}%
+        </div>
+    </div>
+</div>
+
