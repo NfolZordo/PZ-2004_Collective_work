@@ -25,6 +25,8 @@ import { StudentComponent } from './component/student/student.component';
 import { ShramenkoComponent } from './students/shramenko/shramenko.component';
 import { SlideshowComponent } from './component/slideshow/slideshow.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { ProgressBarComponent } from './students/sokolov/components/progress-bar/progress-bar.component';
+import { TiltCardComponent } from './students/sokolov/components/tilt-card/tilt-card.component';
 
 const routes: Routes = [
   { path: 'babich', component: BabichComponent },
@@ -67,7 +69,9 @@ const routes: Routes = [
     StudentComponent,
     ShramenkoComponent,
     SlideshowComponent,
-    FooterComponent
+    FooterComponent,
+    ProgressBarComponent,
+    TiltCardComponent
   ],
   imports: [
     BrowserModule,

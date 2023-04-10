@@ -1,0 +1,61 @@
+:root {
+    --yellow: #ffba49;
+    --sea: #6dfddd;
+    --red: #ef5b5b;
+    --purple: #23001e;
+    --rotateX: 0;
+    --rotateY: 0;
+}
+
+:host {
+    font-size: 20px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projects-title {
+    margin: 30px;
+}
+
+.resume {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block {
+    width: 30vw;
+}
+
+.resume__summary {
+    margin-bottom: 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+.header__avatar__img {
+    border-radius: 50%;
+    height: 80px;
+    margin-right: 30px;
+}
+
+.resume__certifications__certificate {
+    margin: 20px;
+}
+
+.resume__study__item {
+    margin: 20px;
+}
+
+.resume__projects__items__item {
+    width: 300px;
+    border-radius: 10px;
+}

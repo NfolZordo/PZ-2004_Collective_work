@@ -1,1 +1,242 @@
-<p>serhienko works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="serhienko.component.css" rel="stylesheet">
+    <title>Serhienko</title>
+</head>
+
+<body>
+    <header>
+        <div class="small">
+            <nav class="navbar-elements">
+                <ul class="navbar-nav" id="myDropdown">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skill">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="page-header" filter-color="green">
+            <div class="myVideo">
+                <video autoplay muted loop id="myVideo" (load)="playVideo()">
+                    <source src="assets/serhienko/images/backvid.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="container">
+                <div class="content-center">
+                    <img class="profile-image" src="assets/serhienko/images/Serhienko.jpg" alt="Image" />
+                    <div class="title">Oleksandr Serhienko</div>
+                    <p class="category text-white">Software Developer</p>
+                </div>
+            </div>
+        </div>
+        <div class="about segment">
+            <div class="about-body">
+                <div class="title"><a id="about">About</a></div>
+                <p>Hello! I am Oleksand Serhienko.I am student of CHSTU and study in FACULTY OF INFORMATION TECHNOLOGIES AND SYSTEMS</p>
+            </div>
+            <div class="about-body">
+                <div class="title">Basic Information</div>
+                <div class="row">
+                  <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
+                  <div class="col-sm-8">20</div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
+                  <div class="col-sm-8">sergiosasa9@gmail.com.com</div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
+                  <div class="col-sm-8">English, German, Ukrainian.</div>
+                </div>
+            </div>
+        </div>
+        <div class="skills segment">
+          <div class="h4 text-center mb-4 title">Professional Skills</div>
+          <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">HTML</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div><span class="progress-value">75%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">CSS</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Java</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">JavaScript</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">SQL</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">TypeScript</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Ruby</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div><span class="progress-value">65%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Python</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 77%;"></div><span class="progress-value">77%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Sony Vegas</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="progress-container progress-primary"><span class="progress-badge">Photoshop</span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
+                    </div>
+                </div>
+               </div>
+              </div>
+            </div>
+          </div>
+         </div>
+         <div class="section" id="portfolio">
+          <div class="container">
+            <div class="row">
+              <div class="center">
+                <div class="h4 text-center mb-4 title">Portfolio</div>
+              </div>
+            </div>
+            <div class="tab-content gallery mt-5">
+              <div class="tab-pane active" id="web-development">
+                <div class="ml-auto mr-auto">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://cooking-recipes-7u6g.onrender.com/">
+                          <figure class="cc-effect"><img src="assets/serhienko/images/project-1.jpg" alt="Image"/>
+                            <figcaption>
+                              <div class="h4">Recent Project</div>
+                              <p>Web Development</p>
+                            </figcaption>
+                          </figure></a></div>
+                      <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://singular-lolly-49185a.netlify.app/">
+                          <figure class="cc-effect"><img src="assets/serhienko/images/project-2.jpg" alt="Image"/>
+                            <figcaption>
+                              <div class="h4">Timetable Project</div>
+                              <p>Web Development</p>
+                            </figcaption>
+                          </figure></a></div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://bespoke-wisp-99c5c4.netlify.app/">
+                          <figure class="cc-effect"><img src="assets/serhienko/images/project-3.jpg" alt="Image"/>
+                            <figcaption>
+                              <div class="h4">Organiser Project</div>
+                              <p>Web Development</p>
+                            </figcaption>
+                          </figure></a></div>
+                      <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://keen-bunny-e9b7d4.netlify.app/">
+                          <figure class="cc-effect"><img src="assets/serhienko/images/project-4.jpg" alt="Image"/>
+                            <figcaption>
+                              <div class="h4">CV Project</div>
+                              <p>Web Development</p>
+                            </figcaption>
+                          </figure></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section"  id="education">
+
+            <div class="h4 text-center mb-4 title">Education</div>
+            <div class="card">
+              <div class="row">
+                <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body cc-education-header">
+                    <p>2017 - 2020</p>
+                    <div class="h5">Сomplete general education</div>
+                  </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <div class="h5">General education</div>
+                    <p class="category">Cherkassy Lyceum of Humanities and Law</p>
+                    <p>  Study 4 modules included, advanced language skills (English and German), Law Translation, Logic
+                      Course work: MODELS AND THEIR APPLICATIONS, COMPUTER SIMULATION</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </main>
+            <footer class="footer">
+                <a class="cc-facebook btn btn-link" href="https://www.facebook.com/sasha.sergienko.944"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a>
+                <a class="cc-twitter btn btn-link " href="https://twitter.com/sashasergienk9"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a>
+                <a class="cc-github btn btn-link" href="https://github.com/Animeshka39"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                <a class="cc-instagram btn btn-link" href="https://www.instagram.com/goadventure___/"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a>
+            </footer>
+    <script>
+        window.onclick = function (e) {
+            if (!e.target.matches('.nav-img')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

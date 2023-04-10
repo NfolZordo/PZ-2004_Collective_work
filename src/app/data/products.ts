@@ -84,13 +84,13 @@ export const students: IStudent[] = [
         "lastName": "Сергієнко",
         "middleName": "Сергійович",
         "photo": "assets/18601.png",
-        "url": "/sergienko"
+        "url": "/serhienko"
     },
     {
         "firstName": "Максим",
         "lastName": "Соколов",
         "middleName": "Сергійович",
-        "photo": "assets/18601.png",
+        "photo": "assets/sokolov/images/avatar.jpg",
         "url": "/sokolov"
     },
     {
