@@ -14,6 +14,4 @@ export class StudentComponent {
   goToStudent(student: IStudent): void {
     this.router.navigate([student.url]);
   }
-
-
 }
