@@ -1,0 +1,245 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+:root {
+  --bg-color: hsla(17, 52%, 53%, 0.3);
+  --libre-franklin-font: "Libre Franklin", sans-serif;
+  --regular-font: 400;
+  --semi-bold-font: 600;
+  --bold-font: 700;
+  --white-color: hsl(0, 0%, 100%);
+  --gray-color: hsl(0, 0%, 20%);
+  --second-bg: hsl(35, 100%, 98%);
+  --pale-stat: hsl(35, 79%, 82%);
+  --dark-stat: hsl(17, 52%, 53%);
+}
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+section {
+  padding: 6rem 0;
+  width: 100%;
+  color: hsl(0, 0%, 20%);
+}
+
+main h2 {
+  font-weight: 700;
+  margin-bottom: 4.5rem;
+  font-size: 1.5rem;
+}
+
+main h3 {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.flex-column-dir {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row-dir {
+  display: flex;
+  flex-direction: row;
+}
+
+.white-space-for-p {
+  white-space: nowrap;
+}
+
+.container {
+  margin-inline: auto;
+  max-width: min(90%, 70rem);
+}
+
+.about-container .container {
+  margin-top: 9.0925rem;
+}
+
+.resume-photo {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  align-self: center;
+  color: black;
+}
+
+.text-container {
+  margin-top: 9.0925rem;
+  align-items: center;
+}
+
+.text-container h1 {
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+.text-container h2 {
+  margin-top: 1.625rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.text-container a {
+  margin-top: 6.625rem;
+  font-weight: 400;
+  font-size: 1.375rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.about-container p {
+  line-height: 138%;
+}
+
+.skills-container {
+  background-color: hsl(35, 100%, 98%);
+}
+
+.skills-container img {
+  max-width: 22rem;
+  height: auto;
+}
+
+.skills-container h3 {
+  white-space: nowrap;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.stats-skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin-right: 100%;
+}
+
+.profile-container .first-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.profile-container .second-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 30px;
+}
+
+.stat-block {
+  margin-top: 2%;
+}
+
+.all-stat {
+  background-color: hsl(35, 79%, 82%);
+  width: 250px;
+  height: 1rem;
+}
+
+.all-stat p {
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.js-full-stat {
+  background-color: hsl(17, 52%, 53%);
+  width: 35%;
+  height: 1rem;
+}
+
+.ux-ui-full-stat {
+  background-color: hsl(17, 52%, 53%);
+  width: 50%;
+  height: 1rem;
+}
+
+.html-full-stat {
+  background-color: hsl(17, 52%, 53%);
+  width: 70%;
+  height: 1rem;
+}
+
+.css-full-stat {
+  background-color: hsl(17, 52%, 53%);
+  width: 65%;
+  height: 1rem;
+}
+
+.react-full-stat {
+  background-color: hsl(17, 52%, 53%);
+  width: 25%;
+  height: 1rem;
+}
+
+.portfolio-container h3 {
+  margin-bottom: 5%;
+}
+
+.portfolio-container img {
+  height: 300px;
+}
+
+.get-in-touch-container {
+  background-color: hsl(35, 100%, 98%);
+}
+
+.link-blocks {
+  margin-top: 6%;
+  justify-content: space-between;
+}
+
+.link-blocks a {
+  text-decoration: none;
+  color: hsl(0, 0%, 20%);
+}
+
+.second-link-block {
+  margin-left: 20%;
+}
+
+.second-link-block a {
+  margin-bottom: 1.5rem;
+}
+
+.third-link-block {
+  margin-right: 20%;
+}
+
+.third-link-block p {
+  margin-bottom: 1.5rem;
+}
