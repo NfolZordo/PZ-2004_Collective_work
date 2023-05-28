@@ -1,0 +1,160 @@
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 80px;
+  background-color: #f4f4f4;
+  border-radius: 30px;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: url(/assets/ryabchich/header.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-links {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.header-links a {
+  margin-right: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.header-text {
+  text-align: center;
+  font-size: 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.row span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.section-title {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  justify-content: space-between;
+}
+
+.skill {
+  width: 40%;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  margin-bottom: 5px;
+}
+
+.skill-bar {
+  height: 10px;
+  background-color: #333333;
+}
+
+.skill-filled {
+  height: 100%;
+  background-color: rgb(255, 90, 90);
+}
+
+
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  position: relative;
+  width: auto;
+  margin: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.project-image {
+  width: auto;
+  max-height: 300px;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+  border-radius: 30px;
+}
+
+.project-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 30px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.project:hover .project-image {
+  opacity: 1;
+}
+
+.project:hover .project-name {
+  opacity: 0;
+}
+
+
+
+.contact-section {
+  background-color: #222222; /* Light Black */
+  padding: 20px;
+  color: white;
+}
+
+.contact-info {
+  margin-top: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
