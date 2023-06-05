@@ -1,0 +1,29 @@
+.logo {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+    0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+}
+
+.example-icon {
+  margin: 0 1%;
+  display: block;
+}
+
+.example-icon > span {
+  padding: 0 1rem;
+  text-align: center;
+  margin: 0 1%;
+}

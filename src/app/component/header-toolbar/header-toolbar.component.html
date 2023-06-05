@@ -1,0 +1,38 @@
+<div class="header-container">
+    <mat-toolbar>
+        <button mat-icon-button (click)="goToHomePage('nu zdarova')" class="example-icon">
+            <mat-icon>home</mat-icon>
+        </button>
+        <span class="logo">Collective work</span>
+        <span class="example-spacer"></span>
+        <!-- MUZ PLAYER: -->
+        <div class="player-container">
+            <div class="container">
+                <div>
+                </div>
+                <div>
+                    <mat-toolbar>
+                        <button mat-icon-button (click)="play(audioService)">
+                            <mat-icon>{{ audioService.audio.paused ? 'play_arrow' : 'pause'}}</mat-icon>
+                            <!-- <mat-icon>{{'play_arrow'}}</mat-icon> -->
+                        </button>
+                        <button mat-icon-button (click)="mute(audioService)">
+                            <mat-icon>{{audioService.audio.volume ? 'volume_up' : 'volume_off'}} </mat-icon>
+                        </button>
+                        <mat-slider id="volumeSlider" (input)="volumeSlider($event)" color="blue" step="1" min="0"
+                            max="16">
+                            <input matSliderThumb (input)="'volumeSlider($event)'" value="0">
+                        </mat-slider>
+                    </mat-toolbar>
+                </div>
+            </div>
+        </div>
+        <!-- LINKS: -->
+        <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+            <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>share</mat-icon>
+        </button> -->
+    </mat-toolbar>
+</div>

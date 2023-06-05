@@ -1,57 +1,177 @@
-/* Fullscreen container */
-.slideshow-container {
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  /* Slides */
-  .slide {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-  
-  /* Show the first slide */
-  .slide:nth-child(1) {
-    opacity: 1;
-  }
+.main-page {
+  height: 600px;
+}
 
-  /* Previous and next buttons */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    cursor: pointer;
-    z-index: 2;
+.slide {
+  width: 1200px;
+  height: 600px;
+  border: #fff;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* background-blend-mode: luminosity;
+  background-clip: border-box; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rightArrow,
+.leftArrow {
+  width: 8rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #faebd70f;
+}
+
+.rightArrow {
+  width: 8rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #faebd70f;
+
+  position: absolute;
+  top: 50%;
+  /* right: 0; */
+  transform: translate(0, -50%);
+  right: 32px;
+  font-size: 45px;
+  color: #000;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.rightArrow:hover,
+.leftArrow:hover {
+  background-color: #faebd7ee;
+  border-radius: 20px;
+  border-color: aqua;
+  border-right: 20px;
+}
+
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 32px;
+  font-size: 45px;
+  color: #000;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.slider {
+  margin: 1% 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+/* .dot {
+  margin: 0 3px;
+  cursor: pointer;
+  font-size: 20px;
+} */
+
+/* Fullscreen container
+.slideshow-container {
+  height: 80vh;
+  width: 100%;
+  margin-top: 30px;
+
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main-page {
+  width: 100%;
+  height: 700px;
+
+  display: flex;
+  justify-content: center;
+} */
+
+/* Styles for screens up to 1024px wide */
+/* @media screen and (max-width: 1024px) {
+  .main-page {
+    height: 720px;
   }
-  
-  /* Position the "previous button" to the left */
-  .prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
+} */
+
+/* Styles for screens up to 768px wide */
+/* @media screen and (max-width: 768px) {
+  .main-page {
+    height: 480px;
   }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
+} */
+
+/* Slides */
+/* .slide {
+  height: 100%;
+  width: 60%;
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+} */
+
+/* Show the first slide */
+/* .slide:nth-child(1) {
+  opacity: 1;
+} */
+
+/* Previous and next buttons */
+/* .prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20%;
+  margin-top: -30px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  z-index: 2;
+} */
+
+/* Position the "previous button" to the left */
+/* .prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+} */
+
+/* Position the "next button" to the right */
+/* .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+} */
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+} */
