@@ -1,39 +1,40 @@
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  position: absolute;
-  width: 100%;
-  font-size: 16px;
-  box-sizing: border-box;
-}
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-left {
+    font-weight: bold;
+  }
+  
+  .footer-right img {
+    margin-left: 20px;
 
-.footer-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+    color: #fff;
+    max-width: 36px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-right a:hover {
+    color: #1DA1F2;
 
-.footer-left {
-  font-weight: bold;
-}
-
-.footer-right img {
-  margin-left: 20px;
-
-  color: #fff;
-  max-width: 36px;
-  transition: color 0.3s ease-in-out;
-}
-
-.footer-right a:hover {
-  color: #1da1f2;
-}
-
-.fa-github:before {
-  content: "\f09b";
-}
-
-.fa-telegram:before {
-  content: "\f2c6";
-}
+  }
+  
+  .fa-github:before {
+    content: "\f09b";
+  }
+  
+  .fa-telegram:before {
+    content: "\f2c6";
+  }

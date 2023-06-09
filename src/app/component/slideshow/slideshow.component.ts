@@ -1,20 +1,4 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
-import { AudioService } from '../../services/audio/audio.service';
-import { SliderService } from '../../services/slider/slider.service';
-
-import { MatIconModule } from '@angular/material/icon';
-import { SlideInterface } from '../../models/slide';
-import { SlideMusic } from '../../models/slide-music';
-
-import {
-  interval,
-  Observable,
-  startWith,
-  Subject,
-  switchMap,
-  timer,
-} from 'rxjs';
-
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-slideshow',
@@ -22,76 +6,53 @@ import {
   styleUrls: ['./slideshow.component.css']
 })
 export class SlideshowComponent implements OnInit, OnDestroy {
-  slidesWithMusic: SlideMusic[] = [];
+  slideIndex = 1;
+  interval: any;
 
-
-
-  @Input() slides: SlideInterface[] = [
-    { url: 'assets/slides/slide-1.jpg', title: 'slide-1' },
-    { url: 'assets/slides/slide-2.png', title: 'slide-2' },
-    { url: 'assets/slides/slide-3.jpg', title: 'slide-3' },
-    { url: 'assets/slides/slide-4.jpg', title: 'slide-4' },
-    { url: 'assets/slides/slide-5.jpg', title: 'slide-5' }
-  ];
-
-  private currentIndex: number = 0;
-  private timeoutId?: number;
-
-  constructor(public audioService: AudioService, public sliderService: SliderService) {
-    this.slidesWithMusic = sliderService.slides;
-    console.log('registered slide-music pairs:', sliderService.slides);
+  ngOnInit() {
+    this.showSlides();
   }
 
-  ngOnInit(): void {
-    this.resetTimer();
-  }
   ngOnDestroy() {
-    console.log('SlideshowComponent destroyed!');
-    window.clearTimeout(this.timeoutId);
+    clearInterval(this.interval);
   }
-  resetTimer() {
 
+  prevSlide() {
+    this.showSlides(this.slideIndex -= 1);
+  }
 
-    if (this.timeoutId) {
-      console.log('timer reset!');
+  nextSlide() {
+    this.showSlides(this.slideIndex += 1);
+  }
 
-      window.clearTimeout(this.timeoutId);
+  showSlides(n = 1) {
+    const slides = document.getElementsByClassName('slide') as HTMLCollectionOf<HTMLElement>;
+    const prev = document.getElementsByClassName('prev') as HTMLCollectionOf<HTMLElement>;
+    const next = document.getElementsByClassName('next') as HTMLCollectionOf<HTMLElement>;
+    // Wrap slides around
+    if (n > slides.length) { this.slideIndex = 1; }
+    if (n < 1) { this.slideIndex = slides.length; }
+
+    // Hide all slides
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.opacity = '0';
     }
-    this.timeoutId = window.setTimeout(() => this.goToNext(), 30000);
+
+    // Show current slide
+    slides[this.slideIndex - 1].style.opacity = '1';
+
+    // Add active class to prev/next buttons
+    if (prev && next) {
+      prev[0].className = prev[0].className.replace(' active', '');
+      next[0].className = next[0].className.replace(' active', '');
+      if (this.slideIndex === 1) { prev[0].className += ' active'; }
+      if (this.slideIndex === slides.length) { next[0].className += ' active'; }
+    }
+
+    // Automatically switch slides every 5 seconds
+    clearInterval(this.interval);
+    this.interval = setInterval(() => {
+      this.showSlides(this.slideIndex += 1);
+    }, 5000);
   }
-
-  goToPrevious(): void {
-    const isFirstSlide = this.currentIndex === 0;
-    const newIndex = isFirstSlide
-      ? this.slides.length - 1
-      : this.currentIndex - 1;
-
-    this.resetTimer();
-    this.currentIndex = newIndex;
-    this.initPlay(this.audioService);
-  }
-
-  goToNext(): void {
-    const isLastSlide = this.currentIndex === this.slides.length - 1;
-    const newIndex = isLastSlide ? 0 : this.currentIndex + 1;
-
-    this.resetTimer();
-    this.currentIndex = newIndex;
-    this.initPlay(this.audioService);
-  }
-
-
-  initCurrentMusic(): void {
-    this.audioService.play(this.currentIndex);
-
-  }
-
-  initPlay(audioService: AudioService): void {
-    audioService.play(this.currentIndex);
-  }
-
-  setCurrentSlideUrl(): string {
-    return `url('${this.slidesWithMusic[this.currentIndex].slide.url}')`;
-  }
-
 }

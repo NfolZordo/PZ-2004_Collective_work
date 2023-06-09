@@ -4,5 +4,4 @@ export interface IStudent {
     middleName: string;
     photo: string;
     url: string;
-    audioFilePath: string 
 }

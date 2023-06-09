@@ -1,12 +1,9 @@
-<div class="main-page">
-    <div class="slider">
-        <div>
-          <div (click)="goToPrevious()" class="leftArrow">❰</div>
-          <div (click)="goToNext()" class="rightArrow">❱</div>
-        </div>
-        <div
-          class="slide"
-          [ngStyle]="{ 'background-image': setCurrentSlideUrl() }"
-        ></div>
-      </div>
+<div class="slideshow-container">
+    <img src="assets/slide1.jpg" alt="main collage" class="slide">
+    <img src="assets/sokolov/images/colage/Screenshot_1.png" alt="collage for two course" class="slide">
+    <img src="assets/komar/colage/colage_covid.png" alt="covid img" class="slide">
+    <!-- <img src="https://via.placeholder.com/1920x1080.png?text=Slide%202" class="slide">
+    <img src="https://via.placeholder.com/1920x1080.png?text=Slide%203" class="slide"> -->
+    <button class="prev" (click)="prevSlide()">&#10094;</button>
+    <button class="next" (click)="nextSlide()">&#10095;</button>
 </div>
