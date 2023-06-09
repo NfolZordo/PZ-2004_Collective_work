@@ -40,7 +40,7 @@ export const students: IStudent[] = [
         "middleName": "Васильович",
         "photo": "assets/zador/images/Thador.jpg",
         "url": "/zadorozhnyi",
-        "audioFilePath": "assets/audio-students/student-theme.mp3"
+        "audioFilePath": "assets/audio-students/zador-theme.mp3"
     },
     {
         "firstName": "Максим",
