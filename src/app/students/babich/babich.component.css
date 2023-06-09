@@ -1,0 +1,441 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+:root {
+  --bg-color: hsla(17, 52%, 53%, 0.3);
+  --libre-franklin-font: "Libre Franklin", sans-serif;
+  --regular-font: 400;
+  --semi-bold-font: 600;
+  --bold-font: 700;
+  --white-color: hsl(0, 0%, 100%);
+  --gray-color: hsl(0, 0%, 20%);
+  --second-bg: hsl(35, 100%, 98%);
+  --pale-stat: hsl(35, 79%, 82%);
+  --dark-stat: hsl(17, 52%, 53%);
+}
+body {
+  font-family: "Libre Franklin", sans-serif;
+  background: url(../../../assets/babich/fon.jpg);
+}
+
+section {
+  padding: 6rem 0;
+  width: 100%;
+  color: hsl(0, 0%, 20%);
+}
+
+main h2 {
+  font-weight: 700;
+  margin-bottom: 4.5rem;
+  font-size: 1.5rem;
+}
+
+main h3 {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.flex-column-dir {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row-dir {
+  display: flex;
+  flex-direction: row;
+}
+
+.white-space-for-p {
+  white-space: nowrap;
+}
+
+.container {
+  margin-inline: auto;
+  max-width: min(90%, 70rem);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.container img {
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+
+.container2 {
+  margin-inline: auto;
+  max-width: min(90%, 70rem);
+  
+}
+
+.container3 {
+  margin-inline: auto;
+  max-width: min(90%, 70rem);
+  text-align: center;
+}
+
+.about-container .container {
+  margin-top: 9.0925rem;
+}
+
+.resume-photo {
+  width: 300px;
+  border-radius: 50%;
+
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 2rem;
+  align-self: center;
+  color: rgb(255, 255, 255);
+}
+
+.text-container {
+  margin-top: 9.0925rem;
+  align-items: center;
+}
+
+.text-container h1 {
+  font-weight: 400;
+  font-size: 4rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.text-container h2 {
+  margin-top: 1.625rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.text-container a {
+  margin-top: 6.625rem;
+  font-weight: 400;
+  font-size: 1.375rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.about-container p {
+  line-height: 138%;
+}
+
+.skills-container {
+  background-color: hsl(35, 100%, 98%);
+  background: url(../../../assets/babich/fon-reverse.jpg);
+}
+
+.skills-container img {
+  max-width: 22rem;
+  height: auto;
+}
+
+.skills-container h3 {
+  white-space: nowrap;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.stats-skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin-right: 100%;
+}
+
+.profile-container .first-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.profile-container .second-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 30px;
+}
+
+.stat-block {
+  margin-top: 2%;
+}
+
+.all-stat {
+  background-color: hsl(15, 90%, 53%);
+  width: 250px;
+  height: 1rem;
+}
+
+.all-stat p {
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.js-full-stat {
+  background-color: hsl(67, 90%, 43%);
+  width: 42%;
+  height: 1rem;
+}
+
+.ux-ui-full-stat {
+  background-color: hsl(67, 90%, 43%);
+  width: 39%;
+  height: 1rem;
+}
+
+.html-full-stat {
+  background-color: hsl(67, 90%, 43%);
+  width: 67%;
+  height: 1rem;
+}
+
+.css-full-stat {
+  background-color: hsl(67, 90%, 43%);
+  width: 70%;
+  height: 1rem;
+}
+
+.react-full-stat {
+  background-color: hsl(67, 90%, 43%);
+  width: 20%;
+  height: 1rem;
+}
+
+.portfolio-container h3 {
+  margin-bottom: 5%;
+}
+
+.portfolio-container img {
+  height: 300px;
+  
+}
+
+.get-in-touch-container {
+  background-color: hsl(35, 100%, 98%);
+}
+
+.link-blocks {
+  margin-top: 6%;
+  justify-content: space-between;
+}
+
+.link-blocks a {
+  text-decoration: none;
+  color: hsl(0, 0%, 20%);
+}
+
+.second-link-block {
+  margin-left: 20%;
+}
+
+.second-link-block a {
+  margin-bottom: 1.5rem;
+}
+
+.third-link-block {
+  margin-right: 20%;
+}
+
+.third-link-block p {
+  margin-bottom: 1.5rem;
+}
+
+.third-link-block flex-column-dir {
+  color: hsl(0, 0%, 20%);
+}
+
+.footer {
+  padding-top: 45px;
+  padding-bottom: 130px;
+  background: #0000005c;
+  color: #FFFFFF;
+}
+
+
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+
+.footer-col {
+  max-width: 350px;
+  flex-grow: 1;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.footer-copyright {
+  color: #ffffff;
+  line-height: 1.6;
+  
+}
+
+.footer-copyright-name {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 15px;
+  margin-left: -100px;
+}
+
+.footer-copyright p {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 100px;
+}
+
+.footer-icons p{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  margin-left: 20px;
+}
+
+.footer-icons-row { 
+  margin-left: 70pt; 
+  display:flex;
+  align-items:center;
+  margin-top: 20px;
+}
+
+
+.footer-icons-row > * + * {
+  margin-left: 40px;
+  
+}
+
+.footer-button {
+  display: inline-block;
+  height: 50px;
+  padding-left: 35px;
+  padding-right: 35px;
+
+  border: 3px solid #FFFFFF;
+  border-radius: 50px;
+
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 44px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  margin-left: 50px;
+
+  transition: all 0.2s ease-in;
+}
+
+.footer-button:hover {
+  background-color: white;
+  color:#1E4776;
+}
+
+.footer-contacts p {
+  margin: 15px 0;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #ffffff;
+  margin-left: 50px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.714em;
+  line-height: 1.45em;
+  text-align: center;
+}
+
+.rows {
+  padding-bottom: 15px;
+}
+
+.row {
+  display: flex;
+  margin-top: 15px;
+}
+
+.col-sm-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-sm-8 {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.progress {
+  background: rgba(0, 0, 0, 0.4);
+  height: 5px;
+}
+
+.progress-bar {
+  background: #000000;
+  height: 5px;
+
+  z-index: 30;
+}
+
+.skills {
+  padding: 10px;
+}
+
+.skills-title {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.progress-container {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
