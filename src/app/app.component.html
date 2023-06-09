@@ -1,5 +1,8 @@
-<router-outlet></router-outlet>
+<app-header-toolbar></app-header-toolbar>
+<!-- <app-audio-player></app-audio-player> -->
+
 <app-slideshow *ngIf="getCurrentPage() === ''"></app-slideshow>
+<router-outlet></router-outlet>
 <ng-container *ngIf="getCurrentPage() === ''">
     <div class="students">
         <app-student class="student" *ngFor="let student of students; let i = index" (click)="goToStudent(student)"
