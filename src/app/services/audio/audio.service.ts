@@ -60,6 +60,23 @@ export class AudioService {
   //   }
   // }
   //backup
+  playParticularSong(audioFilePath: string): void {
+    if (!audioFilePath || audioFilePath === undefined) {
+      audioFilePath = "assets/audio-students/student-theme.mp3";
+    }
+    this.audio.src = audioFilePath;
+    let playPromise = this.audio.play();
+        if (playPromise !== undefined) {
+          playPromise.then(_ => {
+          })
+          .catch(error => {
+            console.log('AudioPlayer error occured:', error);
+            console.log('Error occured:', error.message);
+            console.log('Error:', error.error.message);
+          }); }
+  }
+
+
     play(index: number): void {
       console.log('AudioService.play() initiated. starting song:', this.musicList[index]);
       if (index === undefined) {

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AudioPlayerComponent } from './audio-player.component';
+import { CvCardComponent } from './cv-card.component';
 
-describe('AudioPlayerComponent', () => {
-  let component: AudioPlayerComponent;
-  let fixture: ComponentFixture<AudioPlayerComponent>;
+describe('CvCardComponent', () => {
+  let component: CvCardComponent;
+  let fixture: ComponentFixture<CvCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AudioPlayerComponent ]
+      declarations: [ CvCardComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AudioPlayerComponent);
+    fixture = TestBed.createComponent(CvCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

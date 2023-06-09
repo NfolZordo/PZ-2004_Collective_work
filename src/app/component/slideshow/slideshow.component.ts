@@ -80,27 +80,14 @@ export class SlideshowComponent implements OnInit, OnDestroy {
     this.initPlay(this.audioService);
   }
 
-  // goToSlide(slideIndex: number): void {
-  //   this.resetTimer();
-  //   this.currentIndex = slideIndex;
-  // }
-
-  // getCurrentMusicUrl(): string {
-  //   return `url('${this.slidesWithMusic[this.currentIndex].music.url}')`;
-  // }
 
   initCurrentMusic(): void {
-    // this.audioService.setCurrentTrack(this.currentIndex);
     this.audioService.play(this.currentIndex);
 
   }
 
   initPlay(audioService: AudioService): void {
     audioService.play(this.currentIndex);
-    // console.log("(Slideshow comp)) is audio paused? ", audioService.audio.paused);
-
-    // audioService.audio.paused ? audioService.play(audioService.getCurrentTrackIndex()) :
-    //                     audioService.pause();
   }
 
   setCurrentSlideUrl(): string {

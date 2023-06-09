@@ -10,6 +10,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
 
 
 
@@ -40,7 +42,9 @@ import { ProgressBarComponent } from './students/sokolov/components/progress-bar
 import { TiltCardComponent } from './students/sokolov/components/tilt-card/tilt-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderToolbarComponent } from './component/header-toolbar/header-toolbar.component';
-import { AudioPlayerComponent } from './component/audio-player/audio-player.component';
+import { CvCardComponent } from './students/krivko/components/cv-card/cv-card.component';
+
+
 
 const routes: Routes = [
   { path: 'babich', component: BabichComponent },
@@ -86,7 +90,9 @@ const routes: Routes = [
     FooterComponent,
     ProgressBarComponent,
     TiltCardComponent,
-    AudioPlayerComponent,
+    CvCardComponent,
+    
+    
 
 
   ],
@@ -96,7 +102,7 @@ const routes: Routes = [
     MatSliderModule,
     MatIconModule,
     MatCardModule,
-
+    MatProgressBarModule,
 
     HeaderToolbarComponent,
     MatToolbarModule,
@@ -104,7 +110,7 @@ const routes: Routes = [
     AppRoutingModule,
     [RouterModule.forRoot(routes), BrowserAnimationsModule]
   ],
-  exports: [RouterModule, AudioPlayerComponent, MatSliderModule],
+  exports: [RouterModule, MatSliderModule],
   providers: [],
   bootstrap: [AppComponent]
 })

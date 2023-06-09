@@ -6,7 +6,6 @@ import { AudioService } from '../../services/audio/audio.service';
 import { MatSliderModule } from '@angular/material/slider';
 import { Router } from '@angular/router';
 
-import { AudioPlayerComponent } from '../audio-player/audio-player.component'; //for testing only
 /**
  * @title Basic toolbar
  */
@@ -27,20 +26,16 @@ export class HeaderToolbarComponent {
     // TODO: REIMPL WITH GLOBAL CONST :
     homePageURL = '/' // !!!TEMPORARY SOLUTION!!! 
 
-    // audioPlayer = new AudioPlayerComponent();
 
-    goToHomePage(a: string): void {
-        // console.log("go home!" + a);
-        // console.log(this.router.createUrlTree);
+    goToHomePage(): void {
         this.router.navigate([this.homePageURL]);
     }
 
     play(audioService: AudioService): void {
-        // audioService.play();
-        console.log("is audio paused? ", audioService.audio.paused);
-        
+        // console.log("is audio paused? ", audioService.audio.paused);
+
         audioService.audio.paused ? audioService.play(audioService.getCurrentTrackIndex()) :
-                            audioService.pause();
+            audioService.pause();
     }
 
     pause(audioService: AudioService): void {
