@@ -4,6 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
+
+
+
+
 
 import { BabichComponent } from './students/babich/babich.component';
 import { VerbivskyiComponent } from './students/verbivskyi/verbivskyi.component';
@@ -24,9 +36,15 @@ import { TsybenkoComponent } from './students/tsybenko/tsybenko.component';
 import { StudentComponent } from './component/student/student.component';
 import { ShramenkoComponent } from './students/shramenko/shramenko.component';
 import { SlideshowComponent } from './component/slideshow/slideshow.component';
+
 import { FooterComponent } from './component/footer/footer.component';
 import { ProgressBarComponent } from './students/sokolov/components/progress-bar/progress-bar.component';
 import { TiltCardComponent } from './students/sokolov/components/tilt-card/tilt-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderToolbarComponent } from './component/header-toolbar/header-toolbar.component';
+import { CvCardComponent } from './students/krivko/components/cv-card/cv-card.component';
+
+
 
 const routes: Routes = [
   { path: 'babich', component: BabichComponent },
@@ -71,14 +89,28 @@ const routes: Routes = [
     SlideshowComponent,
     FooterComponent,
     ProgressBarComponent,
-    TiltCardComponent
+    TiltCardComponent,
+    CvCardComponent,
+    
+    
+
+
   ],
   imports: [
+    MatButtonModule,
+    MatListModule,
+    MatSliderModule,
+    MatIconModule,
+    MatCardModule,
+    MatProgressBarModule,
+
+    HeaderToolbarComponent,
+    MatToolbarModule,
     BrowserModule,
     AppRoutingModule,
-    [RouterModule.forRoot(routes)]
+    [RouterModule.forRoot(routes), BrowserAnimationsModule]
   ],
-  exports: [RouterModule],
+  exports: [RouterModule, MatSliderModule],
   providers: [],
   bootstrap: [AppComponent]
 })
