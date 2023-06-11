@@ -6,7 +6,7 @@ export const students: IStudent[] = [
         "firstName": "Артур",
         "lastName": "Бабич",
         "middleName": "Денисович",
-        "photo": "assets/18601.png",
+        "photo": "assets/arturbabich.jpg",
         "url": "/babich",
         "audioFilePath": "assets/audio-students/student-theme.mp3"
     },
