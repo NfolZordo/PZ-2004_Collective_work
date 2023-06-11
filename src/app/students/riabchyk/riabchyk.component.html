@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="./riabchyk.component.css" />
   </head>
   <body>
+    <div *ngIf="isOverlayVisible" class="overlay" (click)="hideOverlay()">
+      <div class="overlay-content">
+        <img class="image-overlay" [src]="imageSource" alt="overlayImage" >
+        <h1>{{ overlayTitle }}</h1>
+        <p>{{ overlayContent }}</p>
+        <h1>Technologies used:</h1>
+      </div>
+    </div>
+
     <div class="header">
       <div class="header-links">
         <a href="riabchyk/#information">About me</a>
@@ -104,37 +113,45 @@
     <div class="section">
       <h2 class="section-title">My projects</h2>
       <div class="projects" id="projects">
-        <div class="project" href="" target="_blank">
+        <a class="project" target="_blank" (click)="handleProjectClick('shop')">
           <img
             class="project-image"
             src="./../../../assets/ryabchich/project 1.png"
             alt="Project 1"
           />
           <div class="project-name">Mobile Grocery</div>
-        </div>
+        </a>
 
-        <div class="project" href="" target="_blank">
+        <a
+          class="project"
+          target="_blank"
+          (click)="handleProjectClick('memory-app')"
+        >
           <img
             class="project-image"
             src="./../../../assets/ryabchich/project 2.jpg"
             alt="Project 1"
           />
           <div class="project-name">Memory app</div>
-        </div>
+        </a>
 
-        <div class="project" href="" target="_blank">
+        <a
+          class="project"
+          target="_blank"
+          (click)="handleProjectClick('mobile-chat')"
+        >
           <img
             class="project-image"
             src="./../../../assets/ryabchich/project 3.png"
             alt="Project 1"
           />
           <div class="project-name">Social Media app</div>
-        </div>
+        </a>
       </div>
     </div>
 
     <section class="contact-section" id="contact">
-      <h2 class="section-title" style="color: white;">Contact Me</h2>
+      <h2 class="section-title" style="color: white">Contact Me</h2>
       <div class="contact-info">
         <p>Email: vitalyryabchich@gmail.com</p>
         <p>Phone: 123-456-7890</p>
