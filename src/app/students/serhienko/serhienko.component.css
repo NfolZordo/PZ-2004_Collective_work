@@ -22,7 +22,13 @@ body {
     min-width: 900px;
     font-family: "Montserrat";
 }
+main {
 
+  background: url("/assets/serhienko/images/cc-bg-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
 .html * {
     margin: 0;
     padding: 0;
