@@ -13,18 +13,6 @@ p {
   margin: 0;
 }
 
-:root {
-  --bg-color: hsla(17, 52%, 53%, 0.3);
-  --libre-franklin-font: "Libre Franklin", sans-serif;
-  --regular-font: 400;
-  --semi-bold-font: 600;
-  --bold-font: 700;
-  --white-color: hsl(0, 0%, 100%);
-  --gray-color: hsl(0, 0%, 20%);
-  --second-bg: hsl(35, 100%, 98%);
-  --pale-stat: hsl(35, 79%, 82%);
-  --dark-stat: hsl(17, 52%, 53%);
-}
 body {
   font-family: "Libre Franklin", sans-serif;
   background: url(../../../assets/babich/fon.jpg);
@@ -81,6 +69,14 @@ img {
   margin-right: auto;
   width: 50%;
 }
+
+.my-life {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .container img {
   margin-left: auto;
   margin-right: auto;
@@ -88,17 +84,7 @@ img {
 
 }
 
-.container2 {
-  margin-inline: auto;
-  max-width: min(90%, 70rem);
-  
-}
 
-.container3 {
-  margin-inline: auto;
-  max-width: min(90%, 70rem);
-  text-align: center;
-}
 
 .about-container .container {
   margin-top: 9.0925rem;
@@ -146,7 +132,6 @@ img {
 }
 
 .skills-container {
-  background-color: hsl(35, 100%, 98%);
   background: url(../../../assets/babich/fon-reverse.jpg);
 }
 
@@ -439,3 +424,4 @@ img {
   margin-bottom: 20px;
   font-size: 18px;
 }
+
