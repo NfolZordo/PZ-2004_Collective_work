@@ -72,7 +72,7 @@ export const students: IStudent[] = [
         "middleName": "Павлівна",
         "photo": "assets/panko/AP.jpg",
         "url": "/panko",
-        "audioFilePath": "assets/audio-students/student-theme.mp3"
+        "audioFilePath": "assets/audio-students/panko-theme.mp3"
     },
     {
         "firstName": "Андрій",
