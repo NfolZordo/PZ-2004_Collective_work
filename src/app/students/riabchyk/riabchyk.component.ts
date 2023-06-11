@@ -14,8 +14,10 @@ export class RiabchykComponent {
   imageSource = '';
   technologies: string[] = [];
 
-  hideOverlay() {
-    this.isOverlayVisible = false;
+  hideOverlay(event: MouseEvent) {
+    if (event.target === event.currentTarget) {
+      this.isOverlayVisible = false;
+    }
   }
 
   handleProjectClick(projectName: string) {
