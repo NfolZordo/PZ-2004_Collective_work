@@ -6,15 +6,6 @@ body {
     padding: 0;
     margin: 0;
 }
-/* .students {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 10%;
-}
-.student {
-    background-color: aquamarine;
-    margin: 15px;
-} */
 .students {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
