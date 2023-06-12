@@ -14,6 +14,7 @@ body {
     color: #F1DA7E;
     padding: 20px;
     text-align: center;
+    box-shadow: #333 0 5px 20px;
   }
 
   h1 {
@@ -91,9 +92,12 @@ main {
   }
   
   .project {
+    background-color: #58586b;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 6px;
   }
   
   .project img {
@@ -101,6 +105,7 @@ main {
     margin-right: 20px;
     height: 180px;
     width: 280px;
+    border-radius: 6px;
   }
   
   .project h3 {
@@ -112,6 +117,12 @@ main {
   .project p {
     margin: 5px 0;
   }
+
+  .description {
+    background: #444553;
+    padding: 10px;
+    border-radius: 6px;
+  }
   
   /* Footer styles */
   footer {
@@ -120,6 +131,7 @@ main {
     padding: 20px;
     text-align: center;
     font-size: 14px;
+    box-shadow: #333 0 -5px 20px;
   }
 
   .contacts-list {
