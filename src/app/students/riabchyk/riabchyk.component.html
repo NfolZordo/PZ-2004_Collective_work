@@ -1,1 +1,108 @@
-<p>riabchyk works!</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryabchych Portfolio</title>
+    <link rel="stylesheet" href="./riabchyk.component.css" />
+  </head>
+  <body>
+    <div *ngIf="isOverlayVisible" class="overlay" (click)="hideOverlay($event)">
+      <div class="overlay-content">
+        <h1>{{ overlayTitle }}</h1>
+        <img class="image-overlay" [src]="imageSource" alt="overlayImage" />
+        <p>{{ overlayContent }}</p>
+        <h1>Technologies used:</h1>
+        <ul class="overlay-tech-container">
+          <li class="overlay-tech-item" *ngFor="let str of technologies">
+            {{ str }}
+          </li>
+        </ul>
+        <div class="source-code-container">
+          <a [href]="sourceLink">View Source Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="header">
+      <img
+        src="assets/ryabchich/profile.jpg"
+        style="height: 250px; width: auto; border-radius: 50%"
+      />
+      <h1 class="header-text">Backend Developer</h1>
+      <h1>Vitaly Ryabchich</h1>
+    </div>
+
+    <div class="section">
+      <div class="about-me">
+        <div class="description">
+          <h1 class="section-title">About Me</h1>
+          <p>
+            Greetings! I'm Vitaly, a 19-year-old passionate backend engineer.
+            Currently pursuing my studies at Cherkasy State Technological
+            University since 2020, I am dedicated to honing my skills in
+            crafting efficient and scalable solutions. My tech stack encompasses
+            Node.js, Nest.js, Strapi, TypeScript, MongoDB, MySQL, Redis, AWS,
+            Firebase, Google Cloud, and Elasticsearch. I thrive on leveraging
+            these technologies to build robust backend systems that power
+            exceptional user experiences. Continuously expanding my knowledge, I
+            am committed to staying at the forefront of the ever-evolving world
+            of software engineering.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h1 class="section-title">My projects</h1>
+      <div class="projects" id="projects">
+        <a class="project" target="_blank" (click)="handleProjectClick('shop')">
+          <img
+            class="project-image"
+            src="./../../../assets/ryabchich/project 1.png"
+            alt="Project 1"
+          />
+          <div class="project-name">Mobile Grocery</div>
+        </a>
+
+        <a
+          class="project"
+          target="_blank"
+          (click)="handleProjectClick('memory-app')"
+        >
+          <img
+            class="project-image"
+            src="./../../../assets/ryabchich/project 2.jpg"
+            alt="Project 1"
+          />
+          <div class="project-name">Memory app</div>
+        </a>
+
+        <a
+          class="project"
+          target="_blank"
+          (click)="handleProjectClick('mobile-chat')"
+        >
+          <img
+            class="project-image"
+            src="./../../../assets/ryabchich/project 3.png"
+            alt="Project 1"
+          />
+          <div class="project-name">Social Media app</div>
+        </a>
+      </div>
+    </div>
+
+    <section class="contact-section">
+      <h1 class="section-title" style="color: white; font-size: 32px">
+        Contact Me
+      </h1>
+      <a href="mailto:vitalyryabchich@gmail.com" class="link">Mail me!</a>
+      <a href="tel:123-456-7890" class="link">Call me</a>
+      <a href="https://github.com/Vitaly2233" target="_blank" class="link"
+        >Github</a
+      >
+    </section>
+  </body>
+</html>

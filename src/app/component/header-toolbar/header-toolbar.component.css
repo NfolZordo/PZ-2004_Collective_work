@@ -1,0 +1,66 @@
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+}
+
+.header-player {
+  z-index: 1000;
+  padding-right: 5rem;
+  margin: 1rem 0%;
+  margin-right: 5rem;
+}
+
+.header-links {
+  margin-top: 0.5%;
+  margin-right: 2%;
+}
+
+.header-links img {
+  color: #fff;
+  max-width: 42px;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+    0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+
+.example-spacer {
+  display: block;
+  block-size: 10px 100px;
+  background-color: #ff00de;
+  width: 20%;
+}
+
+mat-toolbar {
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+}
+
+.example-icon {
+  margin: 0 1%;
+}
+
+.example-icon > span {
+  padding: 0 1rem;
+  text-align: center;
+  margin: 0 1%;
+}

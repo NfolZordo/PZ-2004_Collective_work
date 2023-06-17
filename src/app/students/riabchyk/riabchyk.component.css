@@ -1,0 +1,180 @@
+html {
+  font-size: 18px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay-content {
+  overflow: scroll;
+  width: 1000px;
+  height: 80vh;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.overlay-content::-webkit-scrollbar {
+  width: 0; /* Hide the scrollbar for Webkit browsers */
+}
+
+.overlay-tech-container {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.overlay-tech-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.overlay-tech-item:last-child {
+  border-bottom: none;
+}
+
+.source-code-container {
+  margin-top: 30px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.source-code-container a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.image-overlay {
+  border-radius: 20px;
+  width: auto;
+  height: 500px;
+}
+
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 80px;
+  background-color: #f4f4f4;
+  border-radius: 30px;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: url(/assets/ryabchich/header.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-text {
+  text-align: center;
+  font-size: 45px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  width: 1300px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  position: relative;
+  width: auto;
+  margin: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.project-image {
+  width: auto;
+  max-height: 500px;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+  border-radius: 30px;
+}
+
+.project-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 30px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.project:hover .project-image {
+  opacity: 1;
+}
+
+.project:hover .project-name {
+  opacity: 0;
+}
+
+.contact-section {
+  margin-top: 80px;
+  background-color: #333;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-section .link {
+  display: block;
+  margin-top: 20px;
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+.contact-section .link:hover {
+  text-decoration: none;
+}

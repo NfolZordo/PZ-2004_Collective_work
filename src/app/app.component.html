@@ -1,5 +1,7 @@
-<router-outlet></router-outlet>
+<app-header-toolbar></app-header-toolbar>
+
 <app-slideshow *ngIf="getCurrentPage() === ''"></app-slideshow>
+<router-outlet></router-outlet>
 <ng-container *ngIf="getCurrentPage() === ''">
     <div class="students">
         <app-student class="student" *ngFor="let student of students; let i = index" (click)="goToStudent(student)"
@@ -8,61 +10,3 @@
 </ng-container>
 
 <app-footer *ngIf="getCurrentPage() === ''"></app-footer>
-
-
-
-<!-- 
-<div>
-    <img style="max-height: 100px;" src="https://cdn-icons-png.flaticon.com/512/18/18601.png"
-        alt="{{ student.lastName }}">
-
-    <h5>{{ student.lastName }} {{ student.firstName }} {{ student.middleName }}</h5>
-</div>
-
-<div class="students">
-    <div class="student">
-        <img style="max-height: 100px;" src="https://cdn-icons-png.flaticon.com/512/18/18601.png"
-            alt="{{ student.lastName }}">
-        <h5>{{ student.lastName }} {{ student.firstName }} {{ student.middleName }}</h5>
-    </div>
-    <div class="student">
-        <img style="max-height: 100px;" src="https://cdn-icons-png.flaticon.com/512/18/18601.png"
-            alt="{{ student.lastName }}">
-        <h5>{{ student.lastName }} {{ student.firstName }} {{ student.middleName }}</h5>
-    </div>
-    <div class="student">
-        <img style="max-height: 100px;" src="https://cdn-icons-png.flaticon.com/512/18/18601.png"
-            alt="{{ student.lastName }}">
-        <h5>{{ student.lastName }} {{ student.firstName }} {{ student.middleName }}</h5>
-    </div>
-    <div class="student">
-        <img style="max-height: 100px;" src="https://cdn-icons-png.flaticon.com/512/18/18601.png"
-            alt="{{ student.lastName }}">
-        <h5>{{ student.lastName }} {{ student.firstName }} {{ student.middleName }}</h5>
-    </div>
-    <div class="student">
-        <img style="max-height: 100px;" src="https://cdn-icons-png.flaticon.com/512/18/18601.png"
-            alt="{{ student.lastName }}">
-        <h5>{{ student.lastName }} {{ student.firstName }} {{ student.middleName }}</h5>
-    </div>
-    <div class="student">
-        <img style="max-height: 100px;" src="https://cdn-icons-png.flaticon.com/512/18/18601.png"
-            alt="{{ student.lastName }}">
-        <h5>{{ student.lastName }} {{ student.firstName }} {{ student.middleName }}</h5>
-    </div>
-    <div class="student">
-        <img style="max-height: 100px;" src="https://cdn-icons-png.flaticon.com/512/18/18601.png"
-            alt="{{ student.lastName }}">
-        <h5>{{ student.lastName }} {{ student.firstName }} {{ student.middleName }}</h5>
-    </div>
-    <div class="student">
-        <img style="max-height: 100px;" src="https://cdn-icons-png.flaticon.com/512/18/18601.png"
-            alt="{{ student.lastName }}">
-        <h5>{{ student.lastName }} {{ student.firstName }} {{ student.middleName }}</h5>
-    </div>
-    <div class="student">
-        <img style="max-height: 100px;" src="https://cdn-icons-png.flaticon.com/512/18/18601.png"
-            alt="{{ student.lastName }}">
-        <h5>{{ student.lastName }} {{ student.firstName }} {{ student.middleName }}</h5>
-    </div>
-</div> -->
