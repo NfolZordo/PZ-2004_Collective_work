@@ -8,140 +8,101 @@
     <link rel="stylesheet" href="./riabchyk.component.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="header-links">
-        <a href="riabchyk/#information">About me</a>
-        <a href="riabchyk/#skills">My skills</a>
-        <a href="riabchyk/#projects">My projects</a>
-        <a href="riabchyk/#contact">Contact me</a>
+    <div *ngIf="isOverlayVisible" class="overlay" (click)="hideOverlay($event)">
+      <div class="overlay-content">
+        <h1>{{ overlayTitle }}</h1>
+        <img class="image-overlay" [src]="imageSource" alt="overlayImage" />
+        <p>{{ overlayContent }}</p>
+        <h1>Technologies used:</h1>
+        <ul class="overlay-tech-container">
+          <li class="overlay-tech-item" *ngFor="let str of technologies">
+            {{ str }}
+          </li>
+        </ul>
+        <div class="source-code-container">
+          <a [href]="sourceLink">View Source Code</a>
+        </div>
       </div>
-      <h1 class="header-text">Software developer</h1>
     </div>
 
-    <div class="information section" id="information">
-      <h2 class="section-title">About me</h2>
-      <div class="row"><span>Name: </span>Vitaly</div>
-      <div class="row"><span>Last Name: </span>Ryabchich</div>
-      <div class="row"><span>Age: </span>19</div>
-      <div class="row"><span>Job: </span>Software Developer</div>
+    <div class="header">
+      <img
+        src="assets/ryabchich/profile.jpg"
+        style="height: 250px; width: auto; border-radius: 50%"
+      />
+      <h1 class="header-text">Backend Developer</h1>
+      <h1>Vitaly Ryabchich</h1>
     </div>
 
-    <div class="section" id="skills">
-      <h2 class="section-title">My skills</h2>
-      <div class="skills section">
-        <div class="skill">
-          <div class="skill-name">NodeJs</div>
-          <div class="skill-bar">
-            <div class="skill-filled" style="width: 80%"></div>
-          </div>
-        </div>
-
-        <div class="skill">
-          <div class="skill-name">MongoDB</div>
-          <div class="skill-bar">
-            <div class="skill-filled" style="width: 90%"></div>
-          </div>
-        </div>
-
-        <div class="skill">
-          <div class="skill-name">PostgreSQL</div>
-          <div class="skill-bar">
-            <div class="skill-filled" style="width: 60%"></div>
-          </div>
-        </div>
-
-        <div class="skill">
-          <div class="skill-name">NestJs</div>
-          <div class="skill-bar">
-            <div class="skill-filled" style="width: 90%"></div>
-          </div>
-        </div>
-
-        <div class="skill">
-          <div class="skill-name">Typescript</div>
-          <div class="skill-bar">
-            <div class="skill-filled" style="width: 70%"></div>
-          </div>
-        </div>
-
-        <div class="skill">
-          <div class="skill-name">AWS</div>
-          <div class="skill-bar">
-            <div class="skill-filled" style="width: 70%"></div>
-          </div>
-        </div>
-
-        <div class="skill">
-          <div class="skill-name">Firebase</div>
-          <div class="skill-bar">
-            <div class="skill-filled" style="width: 60%"></div>
-          </div>
-        </div>
-
-        <div class="skill">
-          <div class="skill-name">Elasticsearch</div>
-          <div class="skill-bar">
-            <div class="skill-filled" style="width: 70%"></div>
-          </div>
-        </div>
-
-        <div class="skill">
-          <div class="skill-name">Jest</div>
-          <div class="skill-bar">
-            <div class="skill-filled" style="width: 60%"></div>
-          </div>
-        </div>
-
-        <div class="skill">
-          <div class="skill-name">Docker</div>
-          <div class="skill-bar">
-            <div class="skill-filled" style="width: 70%"></div>
-          </div>
+    <div class="section">
+      <div class="about-me">
+        <div class="description">
+          <h1 class="section-title">About Me</h1>
+          <p>
+            Greetings! I'm Vitaly, a 19-year-old passionate backend engineer.
+            Currently pursuing my studies at Cherkasy State Technological
+            University since 2020, I am dedicated to honing my skills in
+            crafting efficient and scalable solutions. My tech stack encompasses
+            Node.js, Nest.js, Strapi, TypeScript, MongoDB, MySQL, Redis, AWS,
+            Firebase, Google Cloud, and Elasticsearch. I thrive on leveraging
+            these technologies to build robust backend systems that power
+            exceptional user experiences. Continuously expanding my knowledge, I
+            am committed to staying at the forefront of the ever-evolving world
+            of software engineering.
+          </p>
         </div>
       </div>
     </div>
 
     <div class="section">
-      <h2 class="section-title">My projects</h2>
+      <h1 class="section-title">My projects</h1>
       <div class="projects" id="projects">
-        <div class="project" href="" target="_blank">
+        <a class="project" target="_blank" (click)="handleProjectClick('shop')">
           <img
             class="project-image"
             src="./../../../assets/ryabchich/project 1.png"
             alt="Project 1"
           />
           <div class="project-name">Mobile Grocery</div>
-        </div>
+        </a>
 
-        <div class="project" href="" target="_blank">
+        <a
+          class="project"
+          target="_blank"
+          (click)="handleProjectClick('memory-app')"
+        >
           <img
             class="project-image"
             src="./../../../assets/ryabchich/project 2.jpg"
             alt="Project 1"
           />
           <div class="project-name">Memory app</div>
-        </div>
+        </a>
 
-        <div class="project" href="" target="_blank">
+        <a
+          class="project"
+          target="_blank"
+          (click)="handleProjectClick('mobile-chat')"
+        >
           <img
             class="project-image"
             src="./../../../assets/ryabchich/project 3.png"
             alt="Project 1"
           />
           <div class="project-name">Social Media app</div>
-        </div>
+        </a>
       </div>
     </div>
 
-    <section class="contact-section" id="contact">
-      <h2 class="section-title" style="color: white;">Contact Me</h2>
-      <div class="contact-info">
-        <p>Email: vitalyryabchich@gmail.com</p>
-        <p>Phone: 123-456-7890</p>
-      </div>
-      <div class="social-media">
-        <a href="https://github.com/Vitaly2233" target="_blank">Github</a>
-      </div>
+    <section class="contact-section">
+      <h1 class="section-title" style="color: white; font-size: 32px">
+        Contact Me
+      </h1>
+      <a href="mailto:vitalyryabchich@gmail.com" class="link">Mail me!</a>
+      <a href="tel:123-456-7890" class="link">Call me</a>
+      <a href="https://github.com/Vitaly2233" target="_blank" class="link"
+        >Github</a
+      >
     </section>
   </body>
 </html>
