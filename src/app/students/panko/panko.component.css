@@ -178,9 +178,13 @@ header .container {
   flex-direction: column;
 }
 
+.first-link-block .link {
+  margin-bottom: 2%;
+}
+
 .link {
   text-decoration: none;
   color: black;
-  margin-bottom: 2%;
+  margin-bottom: 0.8%;
   font-weight: 600;
 }
