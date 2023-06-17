@@ -8,7 +8,7 @@ import {Component, Input} from '@angular/core';
 export class TiltCardComponent {
   @Input() imgSrc!: string
   @Input() index!: number
-  @Input() url: string = ''
+  @Input() title: string = ''
 
 
   ngOnInit() {
