@@ -51,7 +51,23 @@ header .container {
 }
 
 .about-container {
-  background-color: hsl(35, 79%, 92%);
+  background-color: hsl(35, 79%, 80%);
+
+  border-radius: 100px;
+}
+
+.about-container .about-block {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-container .first-block {
+  width: 57%;
+}
+
+.about-container .second-block {
+  display: flex;
+  justify-content: center;
 }
 
 .about-container .container {
@@ -64,11 +80,46 @@ header .container {
   margin-bottom: 4%;
 }
 
+.skills-container .container {
+  padding: 3% 0;
+  margin: 0 15%;
+}
+
+.skills-container h2 {
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.skills-container .direction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.skills-container .second-caption {
+  padding-left: 25%;
+}
+
+.skills-container .js-item {
+  padding-top: 2%;
+}
+
+.skills-container .css-item {
+  padding-top: 2%;
+}
+
+.skills-container .react-item {
+  padding-top: 2%;
+}
+
 .portfolio-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: hsl(35, 79%, 80%);
+
+  border-radius: 100px;
 }
 
 .portfolio-container .container {
@@ -95,13 +146,9 @@ header .container {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.get-in-touch-container {
-  background-color: hsl(35, 79%, 92%);
-}
-
 .get-in-touch-container .container {
   padding: 3% 0;
-  margin: 0 15%;
+  margin: 0 30%;
 }
 
 .link-blocks {
@@ -109,7 +156,7 @@ header .container {
   flex-direction: row;
   justify-content: center;
   margin-top: 3%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .get-in-touch-container h2 {
@@ -121,10 +168,19 @@ header .container {
   flex-direction: column;
 }
 
-.first-link-block a {
-  margin-top: 5%;
+.second-link-block {
+  display: flex;
+  flex-direction: row;
 }
 
-.second-link-block a {
-  margin-top: 5%;
+.get-in-touch-container .second-link-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 2%;
+  font-weight: 600;
 }
