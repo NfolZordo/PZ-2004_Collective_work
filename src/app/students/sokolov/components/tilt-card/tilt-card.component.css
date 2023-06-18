@@ -10,7 +10,12 @@
     display:block;
     object-fit: contain;
     object-position: center;
-    filter: brightness(60%)
+    filter: brightness(90%)
+}
+
+.card_title {
+    color: #FBFBFB;
+    font-family: Bahnschrift;
 }
 
 .card {
@@ -39,7 +44,7 @@
 .card::before {
     inset: 0.75rem;
     border-radius: inherit;
-    background: black;
+    background: #000000;
     z-index: -1;
     transform: translateZ(-50px);
     filter: blur(15px);
@@ -49,7 +54,7 @@
 .card::after {
     z-index: -2;
     inset: -1rem;
-    background: linear-gradient(-45deg, var(--sea), var(--red));
+    background: linear-gradient(-45deg, #345ad5, var(--red));
     transform: translateZ(-50px);
 }
 

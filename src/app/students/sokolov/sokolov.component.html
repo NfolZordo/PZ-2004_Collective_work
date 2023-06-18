@@ -10,11 +10,11 @@
     <div class="header__avatar">
         <img class="header__avatar__img" src="assets/sokolov/images/avatar.jpg" alt="avatar">
     </div>
-    <h2 class="header__name">Sokolov Maksym</h2>
+    <h1 class="header__name">Sokolov Maksym</h1>
 </header>
 <div class="resume">
     <div class="resume__summary block">
-        <h2>About</h2>
+        <h3>About</h3>
         <p class="resume__summary_text">
             Front-end developer with 1 year experience. I have been interested in web development since my school age. I
             like to travel and walk in the mountains, I have a second category in hiking and sports tourism. I like to
@@ -23,37 +23,64 @@
         </p>
     </div>
     <div class="resume__certifications block">
-        <h2>Certifications</h2>
-        <div class="resume__certifications__certificate">
-            <h4 class="resume__certifications__certificate__name">ICAgile Certified Professional</h4>
-            <p class="resume__certifications__certificate__date">Issued Jul 2022 · No Expiration Date</p>
-        </div>
-        <div class="resume__certifications__certificate">
-            <h4 class="resume__certifications__certificate__name">SPD-University</h4>
-            <p class="resume__certifications__certificate__date">Issued Jan 2022 · No Expiration Date</p>
-        </div>
+        <h3>Certifications</h3>
+        <ul>
+            <li>
+                <div class="resume__certifications__certificate">
+                    <h5 class="resume__certifications__certificate__name list-item">ICAgile Certified Professional</h5>
+                    <p class="resume__certifications__certificate__date list-item">Issued Jul 2022 · No Expiration Date</p>
+                    <p class="list-item">Credential ID 244-33561-12b8ce63-d8c1-4466-b86d-65cb89af1deb</p>
+                </div>
+            </li>
+            <li>
+                <div class="resume__certifications__certificate">
+                    <h5 class="resume__certifications__certificate__name list-item">SPD-University</h5>
+                    <p class="resume__certifications__certificate__date list-item">Issued Jan 2022 · No Expiration Date</p>
+                    <p class="list-item">Credential ID SPDU280122FE13</p>
+                </div>
+            </li>
+        </ul>
     </div>
     <div class="resume__study block">
-        <h2>Education</h2>
-        <div class="resume__study__item">
-            <h4 class="resume__study__item__name">ChSTU</h4>
-            <p class="resume__study__item__date">Sep 2020 - Present · 2 yr 8 mo</p>
-        </div>
+        <h3>Education</h3>
+        <ul>
+            <li>
+                <div class="resume__study__item">
+                    <h5 class="resume__study__item__name list-item">Cherkasy, School #10</h5>
+                    <p class="resume__study__item__date list-item">Sep 2009 - May 2020</p>
+                </div>
+            </li>
+            <li>
+                <div class="resume__study__item">
+                    <h5 class="resume__study__item__name list-item">ChSTU</h5>
+                    <p class="resume__study__item__date list-item">Sep 2020 - Present · 2 yr 8 mo</p>
+                </div>
+            </li>
+        </ul>
+
     </div>
     <div class="resume__skills block">
-        <h2 class="resume__skills__title">Skills</h2>
-        <div *ngFor="let skill of SKILLS_LIST" class="skills">
-            <progress-bar [width]="500" [progress]="skill[1]" [title]="skill[0]"></progress-bar>
+        <h3 class="resume__skills__title">Skills</h3>
+        <div class="skills">
+            <div *ngFor="let skill of SKILLS_LIST" class="skill">
+                <progress-bar [width]="500" [progress]="skill[1]" [title]="skill[0]"></progress-bar>
+            </div>
         </div>
     </div>
-    <h2 class="projects-title">Projects</h2>
+    <h3 class="projects-title">Projects</h3>
     <div class="projects">
-<!--        url="http://localhost:8080"-->
-        <tilt-card
-                [imgSrc]="'assets/sokolov/images/projects/firstProject.png'"
-                [index]="0">
-        </tilt-card>
-        <tilt-card [imgSrc]="'assets/sokolov/images/projects/secondProject.png'" [index]="1"></tilt-card>
+        <div>
+            <tilt-card
+                    [title]="'To-do list with data memorization'"
+                    [imgSrc]="'assets/sokolov/images/projects/firstProject.png'"
+                    [index]="0">
+            </tilt-card>
+        </div>
+        <div>
+            <tilt-card
+                    [title]="'Site for displaying spending money from your card'"
+                    [imgSrc]="'assets/sokolov/images/projects/secondProject.png'" [index]="1"></tilt-card>
+        </div>
     </div>
 </div>
 </body>

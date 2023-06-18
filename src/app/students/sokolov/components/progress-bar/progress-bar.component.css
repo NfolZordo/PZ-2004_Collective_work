@@ -1,18 +1,19 @@
 .progress-bar__title {
     text-align: center;
-    text-shadow: 1px 1px 1px #6b6b6b;
-    color: #2ac2bd;
+    text-shadow: 1px 1px 1px #cccccc;
+    font-size: 20px;
+    color: #000000;
 }
 
 .progress-bar__percents {
     color: #ffffff;
-    height: 20px;
-    background-color: var(--sea);
+    height: 25px;
+    background-color: #151515;
     text-align: center;
 }
 
 .progress-bar__progress {
-    height: 20px;
-    border: 1px solid var(--sea);
+    height: 25px;
+    border: 1px solid  #151515;
     border-radius: 5px;
 }
