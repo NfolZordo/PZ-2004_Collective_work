@@ -96,15 +96,33 @@ main {
     align-items: center;
     margin-bottom: 20px;
   }
+
+  .project-desc {
+    display: block;
+    background: #333;
+    border-radius: 6px;
+    padding: 15px;
+  }
+
+  .project-desc a{
+    text-decoration: none;
+  }
+
+  .project-desc a:hover {
+    border-bottom: 3px solid goldenrod;
+    color: goldenrod;
+    transition: .2s;
+  }
   
   .project img {
     max-width: 100%;
     margin-right: 20px;
-    height: 180px;
-    width: 280px;
+    width: 25vw;
+    border-radius: 6px;
+    box-shadow: rgba(218, 165, 32, 0.212) 5px 5px 10px ;
   }
   
-  .project h3 {
+  .project a {
     color: aliceblue;
     font-size: 18px;
     margin: 20px;
