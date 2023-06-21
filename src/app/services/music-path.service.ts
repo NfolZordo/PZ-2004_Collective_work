@@ -28,8 +28,8 @@ export class MusicPathService {
       url: 'assets/audio-main/golden-hour.mp3'
     },
     {
-      title: "JVKE ft Ruel: Golden Hour",
-      url: 'assets/audio-main/golden-hour.mp3'
+      title: "Vanessa Mae: Sailor moon",
+      url: 'assets/audio-main/vanessa_mae_-_sailor_moon.mp3'
     },
   ];
 

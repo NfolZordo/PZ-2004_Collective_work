@@ -102,3 +102,8 @@ dd.clear {
 .project-image {
   width: 400px;
 }
+
+.project-link {
+  margin: 10px 0px 5px;
+
+}
