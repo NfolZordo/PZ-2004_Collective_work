@@ -9,6 +9,7 @@ export class TiltCardComponent {
   @Input() imgSrc!: string
   @Input() index!: number
   @Input() title: string = ''
+  @Input() url!: string;
 
 
   ngOnInit() {

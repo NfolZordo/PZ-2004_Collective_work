@@ -1,6 +1,8 @@
 <div class="card-container">
     <div class="card" [style.width]="'400px'" [style.height]="'500px'">
-        <p class="card_title">{{title}}</p>
-        <img [src]="imgSrc" alt="img">
+        <a [href]="url">
+            <p class="card_title">{{title}}</p>
+            <img [src]="imgSrc" alt="img">
+        </a>
     </div>
 </div>
