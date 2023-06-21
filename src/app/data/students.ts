@@ -46,7 +46,7 @@ export const students: IStudent[] = [
         "firstName": "Максим",
         "lastName": "Комар",
         "middleName": "Леонідович",
-        "photo": "assets/komar/header/photo.jpg",
+        "photo": "assets/komar/header/photo.png",
         "url": "/komar",
         "audioFilePath": "assets/audio-students/student-theme.mp3"
     },
