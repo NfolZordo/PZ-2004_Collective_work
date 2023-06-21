@@ -42,7 +42,7 @@ export class AudioService {
   //   if (playPromise !== undefined) {
   //     playPromise.then(_ => {
   //       console.log('promise successful');
-        
+
   //       window.setTimeout(() => {console.log('trek started, sleeping now', 10000);
   //       this.audio.pause()
 
@@ -102,7 +102,7 @@ export class AudioService {
         }
       } else {
         console.log('i`m here');
-        
+
         this.trackPointer = index;
         this.audio.src = this.musicList[this.trackPointer].url;
         let playPromise = this.audio.play();
@@ -115,12 +115,12 @@ export class AudioService {
 
             }); }
         this.playingSubject.next(true);
-      } 
+      }
       // else {
       //   console.log('Error, wrong index type (src:AudioService)');
       // }
       this.currentMusicSubject.next(this.musicList[this.trackPointer]);
-    
+
   }
   //   play(index: number): void {
   //     console.log('AudioService.play() initiated. index arg:', index);
@@ -147,12 +147,12 @@ export class AudioService {
   //       }
   //     } else {
   //       console.log('i`m here');
-        
+
   //       this.trackPointer = index;
   //       this.audio.src = this.musicList[this.trackPointer].url;
   //       this.audio.play();
   //       this.playingSubject.next(true);
-  //     } 
+  //     }
   //     // else {
   //     //   console.log('Error, wrong index type (src:AudioService)');
   //     // }

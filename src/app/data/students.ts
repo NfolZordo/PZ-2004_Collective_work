@@ -126,9 +126,9 @@ export const students: IStudent[] = [
         "firstName": "В'ячеслав",
         "lastName": "Цибенко",
         "middleName": "Олександрович",
-        "photo": "assets/tsybenko/photo.png",
+        "photo": "assets/tsybenko/photo1.png",
         "url": "/tsybenko",
-        "audioFilePath": "assets/audio-students/student-theme.mp3"
+        "audioFilePath": "assets/audio-students/vanessa_mae_-_sailor_moon.mp3"
     },
     {
         "firstName": "Валерій",
