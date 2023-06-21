@@ -30,7 +30,7 @@ export class MusicPathService {
     {
       title: "Vanessa Mae: Sailor moon",
       url: 'assets/audio-main/vanessa_mae_-_sailor_moon.mp3'
-    },
+    }
   ];
 
   getAudioFiles() {
