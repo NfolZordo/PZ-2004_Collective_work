@@ -98,3 +98,7 @@ dd.clear {
   margin: 0;
   height: 15px;
 }
+
+.project-image {
+  width: 400px;
+}
