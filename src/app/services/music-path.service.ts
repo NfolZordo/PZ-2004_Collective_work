@@ -27,6 +27,10 @@ export class MusicPathService {
       title: "JVKE ft Ruel: Golden Hour",
       url: 'assets/audio-main/golden-hour.mp3'
     },
+    {
+      title: "JVKE ft Ruel: Golden Hour",
+      url: 'assets/audio-main/golden-hour.mp3'
+    },
   ];
 
   getAudioFiles() {
