@@ -32,7 +32,8 @@ export class SlideshowComponent implements OnInit, OnDestroy {
     { url: 'assets/slides/slide-3.jpg', title: 'slide-3' },
     { url: 'assets/slides/slide-4.jpg', title: 'slide-4' },
     { url: 'assets/slides/slide-5.jpg', title: 'slide-5' },
-    { url: 'assets/slides/slide-6.jpg', title: 'slide-6' }
+    { url: 'assets/slides/slide-6.jpg', title: 'slide-6' },
+    { url: 'assets/slides/slide-7.jpg', title: 'slide-7' }
   ];
 
   private currentIndex: number = 0;
