@@ -35,6 +35,10 @@ export class MusicPathService {
       title: "JVKE ft Ruel: Golden Hour",
       url: 'assets/audio-main/golden-hour.mp3'
     },
+    {
+      title: "ERA - Ameno",
+      url: 'assets/audio-main/ameno.mp3'
+    },
   ];
 
   getAudioFiles() {
