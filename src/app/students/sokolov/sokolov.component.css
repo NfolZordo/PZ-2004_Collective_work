@@ -1,6 +1,5 @@
 :root {
     --yellow: #ffba49;
-    --sea: #6dfddd;
     --red: #ef5b5b;
     --purple: #23001e;
     --rotateX: 0;
@@ -28,7 +27,8 @@
 }
 
 .block {
-    width: 30vw;
+    width: 35vw;
+    text-align: justify;
 }
 
 .resume__summary {
@@ -48,14 +48,28 @@
 }
 
 .resume__certifications__certificate {
-    margin: 20px;
+    margin: 10px;
 }
 
 .resume__study__item {
-    margin: 20px;
+    margin: 10px;
 }
 
 .resume__projects__items__item {
     width: 300px;
     border-radius: 10px;
+}
+
+.resume__skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-item {
+    margin: 5px;
+}
+
+.skill {
+    margin: 10px;
 }

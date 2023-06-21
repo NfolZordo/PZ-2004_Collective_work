@@ -20,7 +20,11 @@ body {
     min-width: 900px;
     font-family: "Montserrat";
 }
-
+#ol_body {
+    background: rgb(0, 1, 83);
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
 .html * {
     margin: 0;
     padding: 0;
@@ -124,7 +128,7 @@ body {
 
 .profile-image {
     border-radius: 50%;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     height: 180px;
     width: 180px;
 }
@@ -151,6 +155,7 @@ body {
 }
 
 .title {
+    margin-top: 20px;
     font-weight: 700;
     font-size: 1.714em;
     line-height: 1.45em;
@@ -291,7 +296,7 @@ footer {
     align-items: center;
     padding-left: 30px;
     color: rgb(255, 255, 255);
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 footer img{
     padding: 0;

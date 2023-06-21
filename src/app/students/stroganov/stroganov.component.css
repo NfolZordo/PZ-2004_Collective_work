@@ -1,0 +1,173 @@
+body {
+    background: #1d1d1d;
+    color:goldenrod;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    line-height: 1.5;
+  }
+
+  /* Header styles */
+  header {
+    font-family: 'League Spartan', sans-serif;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  nav ul li a:hover {
+    color: goldenrod;
+    transition: 250ms;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Main content styles */
+  main {
+    padding: 20px;
+  }
+
+  section {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  
+
+  /* Main content styles */
+main {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    color: aliceblue;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .skills-container {
+    display: flex;
+  }
+
+  .skill {
+    padding-right: 10px;
+  }
+  
+  .project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .project-desc {
+    display: block;
+    background: #333;
+    border-radius: 6px;
+    padding: 15px;
+  }
+
+  .project-desc a{
+    text-decoration: none;
+  }
+
+  .project-desc a:hover {
+    border-bottom: 3px solid goldenrod;
+    color: goldenrod;
+    transition: .2s;
+  }
+  
+  .project img {
+    max-width: 100%;
+    margin-right: 20px;
+    width: 25vw;
+    border-radius: 6px;
+    box-shadow: rgba(218, 165, 32, 0.212) 5px 5px 10px ;
+  }
+  
+  .project a {
+    color: aliceblue;
+    font-size: 18px;
+    margin: 20px;
+  }
+  
+  .project p {
+    margin: 5px 0;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .contacts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contacts-list li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-label {
+    font-weight: bold;
+  }
+  
+  .contact-label,
+  .contacts-list a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .contacts-list a {
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 5px;
+  }
+  
+  .contacts-list a:hover {
+    color: goldenrod;
+    transition: 250ms;
+  }

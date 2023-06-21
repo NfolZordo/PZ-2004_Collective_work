@@ -6,7 +6,7 @@ export const students: IStudent[] = [
         "firstName": "Артур",
         "lastName": "Бабич",
         "middleName": "Денисович",
-        "photo": "assets/18601.png",
+        "photo": "assets/babich/My photo.jpg",
         "url": "/babich",
         "audioFilePath": "assets/audio-students/student-theme.mp3"
     },
@@ -40,13 +40,13 @@ export const students: IStudent[] = [
         "middleName": "Васильович",
         "photo": "assets/zador/images/Thador.jpg",
         "url": "/zadorozhnyi",
-        "audioFilePath": "assets/audio-students/student-theme.mp3"
+        "audioFilePath": "assets/audio-students/zador-theme.mp3"
     },
     {
         "firstName": "Максим",
         "lastName": "Комар",
         "middleName": "Леонідович",
-        "photo": "assets/18601.png",
+        "photo": "assets/komar/header/photo.png",
         "url": "/komar",
         "audioFilePath": "assets/audio-students/student-theme.mp3"
     },
@@ -62,7 +62,7 @@ export const students: IStudent[] = [
         "firstName": "Олег",
         "lastName": "Куценко",
         "middleName": "Сергійович",
-        "photo": "assets/18601.png",
+        "photo": "assets/kutsenko.png",
         "url": "/kutsenko",
         "audioFilePath": "assets/audio-students/student-theme.mp3"
     },
@@ -72,7 +72,7 @@ export const students: IStudent[] = [
         "middleName": "Павлівна",
         "photo": "assets/panko/AP.jpg",
         "url": "/panko",
-        "audioFilePath": "assets/audio-students/student-theme.mp3"
+        "audioFilePath": "assets/audio-students/panko-theme.mp3"
     },
     {
         "firstName": "Андрій",
@@ -88,7 +88,7 @@ export const students: IStudent[] = [
         "middleName": "Володимирович",
         "photo": "assets/ryabchich/profile.jpg",
         "url": "/riabchyk",
-        "audioFilePath": "assets/audio-students/student-theme.mp3"
+        "audioFilePath": "assets/audio-students/ryabchich-theme.mp3"
     },
     {
         "firstName": "Олександр",
@@ -96,7 +96,7 @@ export const students: IStudent[] = [
         "middleName": "Сергійович",
         "photo": "assets/serhienko/images/Serhienko.jpg",
         "url": "/serhienko",
-        "audioFilePath": "assets/audio-students/student-theme.mp3"
+        "audioFilePath": "assets/audio-students/serhienko-theme.mp3"
     },
     {
         "firstName": "Максим",
@@ -118,9 +118,9 @@ export const students: IStudent[] = [
         "firstName": "Янош",
         "lastName": "Строганов",
         "middleName": "Романович",
-        "photo": "assets/18601.png",
+        "photo": "assets/stroganov/avatar.jpg",
         "url": "/stroganov",
-        "audioFilePath": "assets/audio-students/student-theme.mp3"
+        "audioFilePath": "assets/audio-students/92elm_Opal.mp3"
     },
     {
         "firstName": "В'ячеслав",
@@ -134,7 +134,7 @@ export const students: IStudent[] = [
         "firstName": "Валерій",
         "lastName": "Шраменко",
         "middleName": "Миколайович",
-        "photo": "assets/18601.png",
+        "photo": "assets/shramenko/pfp_image.jpg",
         "url": "/shramenko",
         "audioFilePath": "assets/audio-students/student-theme.mp3"
     },

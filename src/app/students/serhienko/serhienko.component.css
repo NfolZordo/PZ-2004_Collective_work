@@ -22,7 +22,13 @@ body {
     min-width: 900px;
     font-family: "Montserrat";
 }
+main {
 
+  background: url("/assets/serhienko/images/cc-bg-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
 .html * {
     margin: 0;
     padding: 0;
@@ -88,7 +94,6 @@ body {
 }
 
 #myVideo {
-
     margin: auto;
     position: absolute;
     top: 50%;
@@ -102,8 +107,7 @@ body {
     overflow: hidden;
     width: 100%;
     height: 100vh;
-    z-index: -1;
-
+    z-index: 0;
 }
 
 .container {
@@ -401,7 +405,7 @@ body {
   color: #fff;
   padding: 20px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
 }
 
